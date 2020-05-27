@@ -6,31 +6,31 @@
 - O usuário pode  realizar uma doação (resolver uma solicitação existente).
 
 # Tabelas
--usuarios
-	-id
-	-nome
-	-email
-	-telefone
--trocas
-	-id
-	-idDoador
-        -ref: usuarios, id
-	-idReceptor
-        -ref: usuarios, id
-	-status
--item_trocas
-	-idTroca
-        -ref: trocas, id
-	-idItem
-        -ref: itens, id
--itens
-	-id
-	-nome
-	-descricao
+- usuarios
+	- id
+	- nome
+	- email
+	- telefone
+- trocas
+	- id
+	- idDoador
+        	- ref: usuarios, id
+	- idReceptor
+        	- ref: usuarios, id
+	- status
+- item_trocas
+	- idTroca
+        	- ref: trocas, id
+	- idItem
+        	- ref: itens, id
+- itens
+	- id
+	- nome
+	- descricao
 
 ## Usar
--express generator
--migrations
+- express generator
+- migrations
 
 ## Endpoints
 
