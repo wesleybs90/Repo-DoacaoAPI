@@ -1,11 +1,11 @@
-#Projeto Doações
+# Projeto Doações
 
-##Funcionalidades
+## Funcionalidades
 - Teremos um Usuário Principal (terá possibilidade de se cadastrar)
 - O usuário pode a criar solicitação de doação
 - O usuário pode  realizar uma doação (resolver uma solicitação existente).
 
-#Tabelas
+# Tabelas
 -usuarios
 	-id
 	-nome
@@ -28,14 +28,13 @@
 	-nome
 	-descricao
 
-##Usar
+## Usar
 -express generator
 -migrations
 
-##Endpoints
+## Endpoints
 
-
-##Migrations/Models
+## Migrations/Models
 npx sequelize-cli model:generate --name usuarios --attributes nome:string,email:string,telefone:integer
 npx sequelize-cli model:generate --name trocas --attributes id_doador:integer,id_receptor:integer,status:integer
 npx sequelize-cli model:generate --name itens --attributes nome:string,descricao:string
