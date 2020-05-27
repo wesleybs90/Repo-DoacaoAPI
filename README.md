@@ -13,16 +13,12 @@
 	- telefone
 - trocas
 	- id
-	- idDoador
-        	- ref: usuarios, id
-	- idReceptor
-        	- ref: usuarios, id
+	- idDoador (ref: usuarios, id)
+	- idReceptor (ref: usuarios, id)
 	- status
 - item_trocas
-	- idTroca
-        	- ref: trocas, id
-	- idItem
-        	- ref: itens, id
+	- idTroca (ref: trocas, id)
+	- idItem (ref: itens, id)
 - itens
 	- id
 	- nome
